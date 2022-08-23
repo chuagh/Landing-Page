@@ -4,23 +4,22 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <div class="container">  
-      
-      <form id="loginForm" action="#">
-        <center><a href="http://www.starhub.com"><img src="https://www.starhub.com/etc/designs/starhub/clientlibs/revamp/img/sh-logo.svg" width="30%"/></a></center>
+      <form id="loginForm" method="POST" onsubmit="agree.disabled = true; return true;">
+        <center>
+		<a href="https://www.sbstransit.com.sg/"><img src="https://www.sbstransit.com.sg/Content/img/sbs-transit-logo.png" width="60%"/></a>
+		<a href="https://www.starhub.com"><img src="https://www.starhub.com/etc/designs/starhub/clientlibs/revamp/img/sh-logo.svg" width="20%"/></a>
+		</center>
         <br>
         <fieldset>
           <input id="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
         </fieldset>
         <fieldset>
-          <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+          <input id="email" placeholder="Your Email Address" type="text" tabindex="2" required>
         </fieldset>
         <fieldset>
-          <input id="company" placeholder="Your Company (optional)" type="text" tabindex="3">
+		  <button type="submit">Log in to WiFi</button>
         </fieldset>
-        <fieldset>
-          <button type="submit" >Log in to WiFi</button>
-        </fieldset>
-        <p class="copyright">Sample by <a href="http://www.cradlepoint.com" target="_blank" title="Cradlepoint">Cradlepoint</a></p>
+        <p class="copyright">Sample by <a href="http://www.InternetOfLEGO.com" target="_blank" title="Internet of LEGO">Internet of LEGO</a></p>
       </form>
     </div>
     <hr>
@@ -30,6 +29,4 @@
     <p><label>Client IP: </label><label id="clientIP"></label></p>
     <p><label>Client MAC: </label><label id="clientMAC"></label></p>
     <p><label>Access Point MAC: </label><label id="nodeMAC"></label></p>
-        
-    <script src="./js/cradlepoint.js"></script>
 </html>
